@@ -139,5 +139,6 @@
     }
     .punkt button{
       flex: 0 46%;
+	font-size:11px;
     }
 }
