@@ -35,15 +35,44 @@
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 10px;
   }
-  
-  .active, .accordion:hover {
-    background-color: #ccc;
+  .yrdm{
+    background: hsl(207deg 100% 39%);
+    color: white;
   }
-  
+  .msql{
+    background: hsl(242deg 41% 27%);
+    color: white;
+  }
+  .mvnt{
+    background: hsl(198deg 19% 44%);
+    color: white;
+  }
+  .ssl{
+    background: hsl(218deg 74% 24%);
+    color: white;
+  }
+  .ellk{
+    background-color: hsl(44deg 89% 49%);
+    color: white;
+  }
+  .xss{
+    background-color: hsl(67deg 4% 41%);
+    color: white;
+  }
+  .pnsy{
+    background-color: hsl(8deg 93% 29%);
+    color: white;
+  }
+  .sgrt{
+    background-color: hsl(61deg 88% 27%);
+    color: white;
+  }
   .accordion:after {
     content: '❯';
-    color: #777;
+    color: white;
     font-weight: bold;
     float: left;
     margin-right: 10px;
@@ -56,7 +85,6 @@
   }
   
   .panel {
-    padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -68,9 +96,8 @@
   
   .punkt button{
     border: 1px solid grey;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 11px;
-    color: #c65757;
     text-decoration: none;
     height: auto;
     margin-left: 10px;
@@ -90,11 +117,21 @@
 
 
 @media only screen and (max-device-width : 1300px) {
-    
+  .panel{
+    display: flex;
+  }
+  .punkt button{
+    flex: 0 47%;
+  }
 }
 
 @media only screen and (max-device-width : 700px) {
-    
+  .panel{
+    display: flex;
+  }
+  .punkt button{
+    flex: 0 47%;
+  }
 }
 @media only screen and (max-device-width : 450px) {
     .panel{
