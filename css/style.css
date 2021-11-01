@@ -4,6 +4,10 @@
 .answer span,button{
     margin-left: 10px;
 }
+.answer span{
+  display: flex;
+  align-items: center;
+}
 .answ{
   border-radius: 4px;
   background-color: #4c1f62;
