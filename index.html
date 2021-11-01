@@ -14,57 +14,55 @@
             <div class="row">
                 <div class="col-12">
                     <div class="main__aparat">
-                        <div class="question">
-                            Sual 1: Vetendas pensiya ucun yaxinlasib. ilk vereceyeniz sual ne olacaq?
-                                <ol>
-                                    <li>Siz pensiya almisiniz?</li>
-                                    <li>Stajiniz varmi?</li>
-                                    <li>Siz dovlet qulluqcususunuz ve ya vredni islerde calisan emekdasmisiniz?</li>
-                                    <li>Qebula yaxinlasin</li>
-                                </ol>
-                                <div class="answer">
-                                    <button class="answ">A)</button><span>1</span>
-                                    <button class="answ">B)</button><span>2</span>
-                                    <button class="answ">C)</button><span>3</span>
-                                    <button class="answ">D)</button><span>4</span>
-
-                                </div>
-                                <div class="next_prew">
-                                    <button>Evvelki</button>
-                                    <button>Novbeti</button>
-                                </div>
+                        <div class="question-box">
+                            <div class="question" data-question-id="1">
+                                Sual 1: Vetendas pensiya ucun yaxinlasib. ilk vereceyeniz sual ne olacaq?
+                                    <ol>
+                                        <li>Siz pensiya almisiniz?</li>
+                                        <li>Stajiniz varmi?</li>
+                                        <li>Siz dovlet qulluqcususunuz ve ya vredni islerde calisan emekdasmisiniz?</li>
+                                        <li>Qebula yaxinlasin</li>
+                                    </ol>
+                                    <div class="answer">
+                                        <button class="answ" data-variant-id="1">A)</button><span>1</span>
+                                        <button class="answ" data-variant-id="2">B)</button><span>2</span>
+                                        <button class="answ" data-variant-id="3">C)</button><span>3</span>
+                                        <button class="answ" data-variant-id="4">D)</button><span>4</span>
+                                        <button class="answ" data-variant-id="5">E)</button><span>5</span>
+                                    </div>
+                            </div>
                         </div>
 
                        <br>
                             <div class="aparat">
-                                <h2>Aparat</h2>
-                                <button class="accordion yrdm">Yardımçı xidmətlər</button>
-                                <div class="panel punkt "> 
-                                    <button class="yrdm">Notaruius xidmətləri</button>
-                                    <button class="yrdm">Kapital Bank</button>
-                                    <button class="yrdm">Beynəlxalq Bank</button>
-                                    <button class="yrdm">Özünə xidmət</button>
+                                <h2>QR-net Aparat</h2>
+                                <button class="accordion yrdm category"  data-category-id="1">Yardımçı xidmətlər</button>
+                                <div class="panel punkt"> 
+                                    <button class="yrdm sub-category"  data-sub-category-id="1">Notaruius xidmətləri</button>
+                                    <button class="yrdm sub-category" data-sub-category-id="2">Kapital Bank</button>
+                                    <button class="yrdm sub-category" data-sub-category-id="3">Beynəlxalq Bank</button>
+                                    <button class="yrdm sub-category" data-sub-category-id="4">Özünə xidmət</button>
                                 </div>
                                    
-                                <button class="accordion msql">Məşğulluq</button>
+                                <button class="accordion msql category"  data-category-id="2">Məşğulluq</button>
                                 <div class="panel punkt"> 
-                                    <button class="msql">Vətəndaşlara şifahi sorğu əsasında marifləndirmə xarakterli məlumat və izahatların verilməsi</button>
-                                    <button class="msql">İşçilərin sayı və ştatların ixtisarı zamanı işdən çıxarılacaq işçilər haqqında rəsmi məlumatın qəbul edilməsi</button>
-                                    <button class="msql">Əmək birjası vasitəsilə məşğulluq xidmətinin göstərilməsi</button>
-                                    <button class="msql">Əmək yarmarkasının təşkil edilməsi</button>
-                                    <button class="msql">Vətəndaşların haqqı ödənilən ictimai işlərə cəlb olunması barədə göndərişlərin verilməsi</button>
-                                    <button class="msql">Vətəndaşların işaxtaran və işsiz kimi qeydiyyata alınması və qeydiyyatdan çıxarılması</button>
-                                    <button class="msql">İşsizlikdən siğorta ödənişinin təyin edilməsi</button>
-                                    <button class="msql">Peşə hazırlığına cəlb olunan işsiz şəxsə verilən təqaüdün təyin edilməsi</button>
-                                    <button class="msql">İşsiz şəxlərə münasib işə dair göndərişin verilməsi və vakant iş yerinin tutulub-tutulmamasına dair işəgötürənin qərarının qəbul edilməsi</button>
-                                    <button class="msql">Fərdi məşğulluq programının hazırlanması</button>
-                                    <button class="msql">Özünüməşğulluq programı çərçivəsində dəstək göstərilməsi (məsləhət və məlumat verilməsi,təlimlər keçirilməsi və biznes planlarının hazırlanması) </button>
-                                    <button class="msql">Peşə kurslarının təşkil edilməsi</button>
-                                    <button class="msql">Peşəyönümü məsləhətlərin verilməsi</button>
-                                    <button class="msql">Sosial iş yerləri üzrə əməkhaqqlarının qismən maliyyələşdirilməsi</button>
-                                    <button class="msql">Vətəndaşların kvota yerləri işlə təmin edilməsi</button>
-                                    <button class="msql">İşaxtaran və işsiz şəxslərə vakansiyalar haqqında mlumat verilməsi</button>
-                                    <button class="msql">Arayışın verilməsi</button>
+                                    <button class="msql sub-category" data-sub-category-id="5">Vətəndaşlara şifahi sorğu əsasında marifləndirmə xarakterli məlumat və izahatların verilməsi</button>
+                                    <button class="msql sub-category" data-sub-category-id="6">İşçilərin sayı və ştatların ixtisarı zamanı işdən çıxarılacaq işçilər haqqında rəsmi məlumatın qəbul edilməsi</button>
+                                    <button class="msql sub-category" data-sub-category-id="7">Əmək birjası vasitəsilə məşğulluq xidmətinin göstərilməsi</button>
+                                    <button class="msql sub-category" data-sub-category-id="8">Əmək yarmarkasının təşkil edilməsi</button>
+                                    <button class="msql sub-category">Vətəndaşların haqqı ödənilən ictimai işlərə cəlb olunması barədə göndərişlərin verilməsi</button>
+                                    <button class="msql sub-category">Vətəndaşların işaxtaran və işsiz kimi qeydiyyata alınması və qeydiyyatdan çıxarılması</button>
+                                    <button class="msql sub-category">İşsizlikdən siğorta ödənişinin təyin edilməsi</button>
+                                    <button class="msql sub-category">Peşə hazırlığına cəlb olunan işsiz şəxsə verilən təqaüdün təyin edilməsi</button>
+                                    <button class="msql sub-category">İşsiz şəxlərə münasib işə dair göndərişin verilməsi və vakant iş yerinin tutulub-tutulmamasına dair işəgötürənin qərarının qəbul edilməsi</button>
+                                    <button class="msql sub-category">Fərdi məşğulluq programının hazırlanması</button>
+                                    <button class="msql sub-category">Özünüməşğulluq programı çərçivəsində dəstək göstərilməsi (məsləhət və məlumat verilməsi,təlimlər keçirilməsi və biznes planlarının hazırlanması) </button>
+                                    <button class="msql sub-category">Peşə kurslarının təşkil edilməsi</button>
+                                    <button class="msql sub-category">Peşəyönümü məsləhətlərin verilməsi</button>
+                                    <button class="msql sub-category">Sosial iş yerləri üzrə əməkhaqqlarının qismən maliyyələşdirilməsi</button>
+                                    <button class="msql sub-category">Vətəndaşların kvota yerləri işlə təmin edilməsi</button>
+                                    <button class="msql sub-category">İşaxtaran və işsiz şəxslərə vakansiyalar haqqında mlumat verilməsi</button>
+                                    <button class="msql sub-category">Arayışın verilməsi</button>
                                 </div>
                                 <button class="accordion mvnt">Sosial müavinətlər</button>
                                 <div class="panel punkt "> 
@@ -77,7 +75,7 @@
                                     <button class="mvnt">Birdəfəlik müavinətin təyin edilməsi,o cümlədən:</button>
                                     <button class="mvnt">Arayışın verilməsi</button>
                                 </div>
-                                <button class="accordion ssl">Sosial xidmətlər</button>
+                                <button class="accordion ssl"> Sosial xidmətlər</button>
                                 <div class="panel punkt "> 
                                     <button class="ssl">Övladlığagötürmə sahəsində məsləhət və məlumat verilməsi</button>
                                     <button class="ssl">Övladlığagötürmə ilə bağlı müraciətlərin qəbul edilməsi</button>
@@ -165,6 +163,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="app/app.js"></script>
+
 </html>
 
 

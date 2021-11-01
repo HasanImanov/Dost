@@ -51,7 +51,7 @@
     color: white;
   }
   .ssl{
-    background: hsl(218deg 74% 24%);
+    background: rgb(62 92 144);
     color: white;
   }
   .ellk{
@@ -100,7 +100,7 @@
     padding: 11px;
     text-decoration: none;
     height: auto;
-    margin-left: 10px;
+    margin-left: 22px;
     margin-top: 4px;
     flex:0 48%;
   }
@@ -109,7 +109,87 @@
     display: none;
 }
 
+/* ---------------- */
 
+.slt{
+    margin: 10px;
+    border-radius: 4px;
+    height: 40px;
+    width: 50%;
+}
+
+
+.sign{
+  text-align: center;
+}
+
+.form-login{
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+
+
+.inpu{
+  margin: 10px;
+    border-radius: 4px;
+    height: 40px;
+    width: 50%;
+  
+}
+.button{
+  border-radius: 4px;
+    width: 50%;
+    height: 40px;
+    margin: 0;
+    background-color: #4c1f62;
+    color: white;
+    margin-top: 10px;
+
+}
+.forget-account{
+  margin-top: 16px;
+
+}
+
+.forget-account a{
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1877f2;
+
+
+}
+
+.hr{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+.create-account{
+  border: 3px solid;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  display: inline-block;
+  color: rebeccapurple;
+}
+.create-account a{
+  color: rebeccapurple;
+}
+.create-account a:hover{
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+
+/* ---------------- */
 
 
 
@@ -121,7 +201,7 @@
     display: flex;
   }
   .punkt button{
-    flex: 0 47%;
+    flex: 0 46%;
   }
 }
 
@@ -130,7 +210,7 @@
     display: flex;
   }
   .punkt button{
-    flex: 0 47%;
+    flex: 0 45%;
   }
 }
 @media only screen and (max-device-width : 450px) {
@@ -138,7 +218,14 @@
       display: flex;
     }
     .punkt button{
-      flex: 0 46%;
-	font-size:11px;
+      flex: 0 44%;
+      font-size: 11px;
+    }
+    .inpu{
+      width: 100%;
+    }
+    .button{
+      width: 100%;
+      margin: 9px;
     }
 }
