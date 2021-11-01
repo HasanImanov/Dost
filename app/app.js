@@ -75,9 +75,6 @@ function getNextQuestion(){
     else if(index === 3){
       questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">D)</button><span>${questionModel.variants[index].text}</span>`)
     }
-    else if(index === 4){
-      questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">E)</button><span>${questionModel.variants[index].text}</span>`)
-    }
   }
   questionBox.append(questionBoxAnswer)
   $(".question-box").html( questionBox)
