@@ -44,11 +44,7 @@ var questionModel = {
     {
       id:4,
       text: "4"
-    },
-    {
-      id:5,
-      text: "1, 4,5,6"
-    },
+    }
   ]
 }
 
