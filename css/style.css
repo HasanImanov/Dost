@@ -226,4 +226,7 @@
       width: 100%;
       margin: 9px;
     }
+    .answer span,button{
+      margin-left: 5px;
+    }
 }
