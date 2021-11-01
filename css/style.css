@@ -12,17 +12,11 @@
   display: flex;
   align-items: center;
 }
-.next_prew{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.next_prew button{
-  border-radius: 4px;
-  background-color: #4c1f62;
-  color: white;
-}
 
+.question{
+    display: flex;
+    flex-direction: column;
+}
 /* --------- acardion */
 .accordion {
     background-color: #eee;
