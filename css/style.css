@@ -112,7 +112,7 @@
 /* ---------------- */
 
 .slt{
-    margin: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
     height: 40px;
     width: 50%;
@@ -132,7 +132,7 @@
 
 
 .inpu{
-  margin: 10px;
+  margin-bottom: 10px;
     border-radius: 4px;
     height: 40px;
     width: 50%;
@@ -226,9 +226,11 @@
     }
     .button{
       width: 100%;
-      margin: 9px;
     }
     .answer span,button{
       margin-left: 5px;
+    }
+    .slt{
+      width: 100%;
     }
 }
