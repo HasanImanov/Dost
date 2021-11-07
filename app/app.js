@@ -24,57 +24,57 @@ $(document).on( "click",".accordion", function() {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
 });
-var questionModel = {
-  id:1,
-  text: "Vetendas pensiya ucun yaxinlasib. ilk vereceyeniz sual ne olacaq?",
-  subQuestion:["Siz pensiya almisiniz?","Stajiniz varmi?","Siz dovlet qulluqcususunuz ve ya vredni islerde calisan emekdasmisiniz?","Qebula yaxinlasin"],
-  variants:[
-    {
-      id:1,
-      text: "1"
-    },
-    {
-      id:2,
-      text: "1, 2"
-    },
-    {
-      id:3,
-      text: "3"
-    },
-    {
-      id:4,
-      text: "4"
-    }
-  ]
-}
+// var questionModel = {
+//   id:1,
+//   text: "Vetendas pensiya ucun yaxinlasib. ilk vereceyeniz sual ne olacaq?",
+//   subQuestion:["Siz pensiya almisiniz?","Stajiniz varmi?","Siz dovlet qulluqcususunuz ve ya vredni islerde calisan emekdasmisiniz?","Qebula yaxinlasin"],
+//   variants:[
+//     {
+//       id:1,
+//       text: "1"
+//     },
+//     {
+//       id:2,
+//       text: "1, 2"
+//     },
+//     {
+//       id:3,
+//       text: "3"
+//     },
+//     {
+//       id:4,
+//       text: "4"
+//     }
+//   ]
+// }
 
-var questionPosition = 1;
-getNextQuestion();
-function getNextQuestion(){
-  var questionBox = $(`<div class="question" data-question-id="${questionModel.id}"> Sual ${questionPosition}: ${questionModel.text}</div>`);
-  var questionBoxOl = $(`<ol></ol>`)
-  questionModel.subQuestion.forEach(element => {
-    questionBoxOl.append(`<li>${element}</li>`)
-  });
-  questionBox.append(questionBoxOl)
-  var questionBoxAnswer = $(`<div class="answer"></div>`)
-  for (let index = 0; index < questionModel.variants.length; index++) {
-    if(index === 0){
-      questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">A)</button><span>${questionModel.variants[index].text}</span>`)
-    }
-    else if(index === 1){
-      questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">B)</button><span>${questionModel.variants[index].text}</span>`)
-    }
-    else if(index === 2){
-      questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">C)</button><span>${questionModel.variants[index].text}</span>`)
-    }
-    else if(index === 3){
-      questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">D)</button><span>${questionModel.variants[index].text}</span>`)
-    }
-  }
-  questionBox.append(questionBoxAnswer)
-  $(".question-box").html( questionBox)
-  questionPosition++;
+// var questionPosition = 1;
+// getNextQuestion();
+// function getNextQuestion(){
+//   var questionBox = $(`<div class="question" data-question-id="${questionModel.id}"> Sual ${questionPosition}: ${questionModel.text}</div>`);
+//   var questionBoxOl = $(`<ol></ol>`)
+//   questionModel.subQuestion.forEach(element => {
+//     questionBoxOl.append(`<li>${element}</li>`)
+//   });
+//   questionBox.append(questionBoxOl)
+//   var questionBoxAnswer = $(`<div class="answer"></div>`)
+//   for (let index = 0; index < questionModel.variants.length; index++) {
+//     if(index === 0){
+//       questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">A)</button><span>${questionModel.variants[index].text}</span>`)
+//     }
+//     else if(index === 1){
+//       questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">B)</button><span>${questionModel.variants[index].text}</span>`)
+//     }
+//     else if(index === 2){
+//       questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">C)</button><span>${questionModel.variants[index].text}</span>`)
+//     }
+//     else if(index === 3){
+//       questionBoxAnswer.append(`<button class="answ" data-variant-id="${questionModel.variants[index].id}">D)</button><span>${questionModel.variants[index].text}</span>`)
+//     }
+//   }
+//   questionBox.append(questionBoxAnswer)
+//   $(".question-box").html( questionBox)
+//   questionPosition++;
 //   $.ajax({
 //     url: "get-next-question",
 //     data: {
@@ -88,41 +88,41 @@ function getNextQuestion(){
 //         alert("error");
 //     }
 // });
-}
-var model = {
-  questionId: 0,
-  variantId: 0,
-  categoryId: 0,
-  subCategoryId:0
-};
+// }
+// var model = {
+//   questionId: 0,
+//   variantId: 0,
+//   categoryId: 0,
+//   subCategoryId:0
+// };
 
 
-$(document).on( "click",".answ", function() {
-  var question = $( ".question" );
+// $(document).on( "click",".answ", function() {
+//   var question = $( ".question" );
 
-  model.questionId = question.data("question-id");
-  model.variantId = $( this ).data("variant-id") ;
-  console.log( model );
+//   model.questionId = question.data("question-id");
+//   model.variantId = $( this ).data("variant-id") ;
+//   console.log( model );
 
-  question.css( "display", "none" );
-  $( ".aparat" ).css( "display", "block" );
-});
+//   question.css( "display", "none" );
+//   $( ".aparat" ).css( "display", "block" );
+// });
 
-$(document  ).on( "click",".sub-category", function() {
-  model.subCategoryId = $( this ).data("sub-category-id")
-  model.categoryId = $( this ).parent().prev().data("category-id") ;
+// $(document  ).on( "click",".sub-category", function() {
+//   model.subCategoryId = $( this ).data("sub-category-id")
+//   model.categoryId = $( this ).parent().prev().data("category-id") ;
   
-  $(accordionItem).toggleClass( "active" )
-    var panel = accordionItem.nextElementSibling;
-      panel.style.maxHeight = null;
-  $( ".question" ).css( "display", "block" );
-  $( ".aparat" ).css( "display", "none" );
-  console.log( model );
-  getNextQuestion()
-      model.questionId = 0;
-      model.variantId = 0;
-      model.categoryId = 0;
-      model.subCategoryId = 0;
+//   $(accordionItem).toggleClass( "active" )
+//     var panel = accordionItem.nextElementSibling;
+//       panel.style.maxHeight = null;
+//   $( ".question" ).css( "display", "block" );
+//   $( ".aparat" ).css( "display", "none" );
+//   console.log( model );
+//   getNextQuestion()
+//       model.questionId = 0;
+//       model.variantId = 0;
+//       model.categoryId = 0;
+//       model.subCategoryId = 0;
 //   $.ajax({
 //     url: "answer",
 //     data: model,
@@ -142,4 +142,4 @@ $(document  ).on( "click",".sub-category", function() {
 //         alert("error");
 //     }
 // });
-});
+// });
