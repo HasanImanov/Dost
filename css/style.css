@@ -220,6 +220,8 @@
     .punkt button{
       flex: 0 43%;
       font-size: 11px;
+      width: 41%;
+      word-break: break-word;
     }
     .inpu{
       width: 100%;
